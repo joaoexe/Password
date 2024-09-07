@@ -1,4 +1,5 @@
 import random
+from file import argumenFile
 char = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%¨&*(){}[]<>:,."
 
 while True:
@@ -14,4 +15,5 @@ while True:
                 passchar = random.choice(char)
                 passwd = passwd + passchar
             print("[+] - Generated Password: ", passwd)
+            argumenFile(passwd)
         break
